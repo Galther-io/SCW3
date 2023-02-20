@@ -43,7 +43,7 @@ public class SCW3 {
                     }
                 break;
                 case 3:
-                    data.max();
+                    System.out.println(data.max());
                 break;
             }
         }while(op!=0);
