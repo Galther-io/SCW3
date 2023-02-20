@@ -11,10 +11,6 @@ package scw3;
 public class ArrayOfNumbers {
     private int[] numlist; 
     
-    public ArrayOfNumbers(int size){
-            numlist = new int[size];          
-    }
-    
     public ArrayOfNumbers(int[] numbers){
         numlist = new int [numbers.length];
         for(int i = 0; i < numbers.length; i++){

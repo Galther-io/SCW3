@@ -14,8 +14,9 @@ public class SCW3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ArrayOfNumbers data = new ArrayOfNumbers(4);
-        System.out.println(data.item(3));
+        int[] list = {3,2,5,4};
+        ArrayOfNumbers data = new ArrayOfNumbers(list);
+        System.out.println(data.item(2));
     }
     
 }
