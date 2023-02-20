@@ -17,18 +17,12 @@ public class ArrayOfNumbers {
         }        
     }
     
-    public ArrayOfNumbers(int[] numbers){
-        for(int i = 0; i < numbers.length; i++){
-            numlist[i] = numbers[i];
-        }
-    }
-    
-    /*public int item(int pos){
+    public int item(int pos){
         return numlist[pos-1];
     }
     
     public int setitem(int pos, int value){
         numlist[pos - 1] = value;
         return 1;
-    }*/
+    }
 }
