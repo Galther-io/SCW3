@@ -17,6 +17,7 @@ public class SCW3 {
         int[] list = {3,2,5,4};
         ArrayOfNumbers data = new ArrayOfNumbers(list);
         System.out.println(data.item(2));
+        System.out.println(data.max());
     }
     
 }

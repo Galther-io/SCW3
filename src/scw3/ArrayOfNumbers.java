@@ -26,4 +26,14 @@ public class ArrayOfNumbers {
         numlist[pos - 1] = value;
         return 1;
     }
+    
+    public int max(){
+        int max = 0;
+        for(int i = 0; i < numlist.length; i++){
+            if(numlist[i] > max){
+                max = numlist[i];
+            }
+        }
+        return max;
+    }
 }
