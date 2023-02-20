@@ -14,7 +14,10 @@ public class SCW3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int[] list = {3,2,5,4};
+        ArrayOfNumbers data = new ArrayOfNumbers(list);
+        System.out.println(data.item(2));
+        System.out.println(data.max());
     }
     
 }
