@@ -14,7 +14,8 @@ public class SCW3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayOfNumbers data = new ArrayOfNumbers(4);
+        System.out.println(data.item(3));
     }
     
 }
