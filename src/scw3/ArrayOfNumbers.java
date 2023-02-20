@@ -22,9 +22,9 @@ public class ArrayOfNumbers {
         return numlist[pos-1];
     }
     
-    public int setitem(int pos, int value){
+    public boolean setitem(int pos, int value){
         numlist[pos - 1] = value;
-        return 1;
+        return true;
     }
     
     public int max(){
