@@ -111,4 +111,25 @@ public class ArrayOfNumbers {
             numlist[i] = numlist[i] + x;
         }
     }
+    
+    public void addObject(ArrayOfNumbers x){
+        int[] temp;
+        
+        if(numlist.length < x.count()){
+            
+            temp = new int[x.count()];
+            for (int i = 0; i < numlist.length; i++){
+                temp[i] = numlist[i];
+            }
+            numlist = new int[x.count()];
+            for (int i = 0; i < temp.length; i++){
+                numlist[i] = temp[i];
+                System.out.println(numlist[i]);
+            }
+            
+        }
+        for (int i = 0; i < numlist.length; i++){
+                numlist[i] = numlist[i] + x.item(i + 1);
+            }
+    }
 }

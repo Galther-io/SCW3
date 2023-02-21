@@ -17,9 +17,11 @@ public class SCW3 {
      */
     public static void main(String[] args) {
         int[] list = {3,2,5,4};
+        int[] list2 = {1,2,3,4,5,6};
         int op = 0, num1, num2;
         Scanner in = new Scanner(System.in);
         ArrayOfNumbers data = new ArrayOfNumbers(list);
+        ArrayOfNumbers data2 = new ArrayOfNumbers(list2);
         do{
             System.out.println("Please select an option:");
             System.out.println("1 - Return a value \n"
@@ -32,6 +34,7 @@ public class SCW3 {
                              + "8 - Average of all values in array\n"
                              + "9 - Multiply each array element with a given number\n"
                              + "10 - Add each array element with a given number\n"
+                             + "11 - Add two objects together\n"
                              + "0 - Exit");
             op = in.nextInt();
             switch(op){
@@ -94,6 +97,10 @@ public class SCW3 {
                     System.out.println("Please insert a number to add to each element in array:");
                     num1 = in.nextInt();
                     data.addConstant(num1);
+                    break;
+                    
+                case 11:
+                    data.addObject(data2);
                     break;
             }
         }while(op!=0);
